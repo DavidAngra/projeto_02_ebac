@@ -3,54 +3,63 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="style.css" />
       <title>Calculadora de médias</title>
    </head>
    <body>
-      <header>
-         <img src="img/logo.png" alt="capelo e diploma" />
-         <h1>Calculadora de médias</h1>
-      </header>
+      <div class="container">
+         <header>
+            <img src="img/logo.png" alt="capelo e diploma" />
+            <h1>Calculadora de médias</h1>
+         </header>
 
-      <form action="">
-         <input type="text" required placeholder="Nome da atividade" />
-         <input
-            type="number"
-            name=""
-            id=""
-            required
-            min="0"
-            max="10"
-            placeholder="Nota da atividade"
-         />
-         <button type="submit">Adicionar +</button>
-      </form>
+         <form action="">
+            <input type="text" required placeholder="Nome da atividade" />
+            <input
+               type="number"
+               name=""
+               id=""
+               required
+               min="0"
+               max="10"
+               placeholder="Nota da atividade"
+            />
+            <button type="submit">Adicionar +</button>
+         </form>
 
-      <table>
-         <thead>
-            <tr>
-               <th>Nome da atividade</th>
-               <th>Nota da atividade</th>
-               <th>Aprovado?</th>
-            </tr>
-         </thead>
+         <table cellspacing="0">
+            <thead>
+               <tr>
+                  <th>Nome da atividade</th>
+                  <th>Nota da atividade</th>
+                  <th>Aprovado?</th>
+               </tr>
+            </thead>
 
-         <tbody>
-            <tr>
-               <td>Atividade 1</td>
-               <td>7</td>
-               <td>
-                  <img src="img/aprovado.png" alt="Emogi festejando" />
-               </td>
-            </tr>
-         </tbody>
+            <tbody>
+               <tr>
+                  <td>Atividade 1</td>
+                  <td>7</td>
+                  <td>
+                     <img src="img/aprovado.png" alt="Emogi festejando" />
+                  </td>
+               </tr>
+            </tbody>
 
-         <tfoot>
-            <tr>
-               <td>Média final</td>
-               <td>7</td>
-               <td>Aprovado</td>
-            </tr>
-         </tfoot>
-      </table>
+            <tfoot>
+               <tr>
+                  <td>Média final</td>
+                  <td>7</td>
+                  <td><span class="resultado aprovado">Aprovado</span></td>
+               </tr>
+            </tfoot>
+         </table>
+      </div>
    </body>
 </html>
